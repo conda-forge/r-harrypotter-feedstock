@@ -1,4 +1,4 @@
-{% set version = '2.1.0' %}
+{% set version = "2.1.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/harrypotter_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/harrypotter/harrypotter_{{ version }}.tar.gz
-  sha256: 13b15dfd8a2470a1ba4eae270c2aeee05fc4f1f47ab2c1b2d91e8675c8bb3394
+  sha256: 192d1256ba770a66a6136647147ee822f249895543119980cb8c927b33d87ac8
 
 build:
-  merge_build_host: True  # [win]
-  number: 2
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -40,13 +40,12 @@ test:
 about:
   home: https://github.com/aljrico/harrypotter
   license: MIT
-  summary: Implementation of the characteristic palette of the houses of Hogwarts School of magic,
-    present in all Harry Potter movies.
+  summary: Implementation of the characteristic palette of the houses of Hogwarts School of magic, present in all Harry Potter movies.
   license_family: MIT
-  license_file: 
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
-    
+
 extra:
   recipe-maintainers:
     - conda-forge/r
