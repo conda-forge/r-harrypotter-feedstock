@@ -1,11 +1,11 @@
-About r-harrypotter
-===================
+About r-harrypotter-feedstock
+=============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-harrypotter-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/aljrico/harrypotter
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-harrypotter-feedstock/blob/main/LICENSE.txt)
 
 Summary: Implementation of the characteristic palette of the houses of Hogwarts School of magic, present in all Harry Potter movies.
 
