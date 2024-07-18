@@ -1,6 +1,5 @@
 {% set version = "2.1.1" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-harrypotter
@@ -13,8 +12,7 @@ source:
   sha256: 192d1256ba770a66a6136647147ee822f249895543119980cb8c927b33d87ac8
 
 build:
-  merge_build_host: true  # [win]
-  number: 3
+  number: 4
   noarch: generic
   rpaths:
     - lib/R/lib/
