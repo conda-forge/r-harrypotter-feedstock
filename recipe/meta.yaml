@@ -1,4 +1,4 @@
-{% set version = "2.1.1" %}
+{% set version = "2.1.2" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/harrypotter_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/harrypotter/harrypotter_{{ version }}.tar.gz
-  sha256: 192d1256ba770a66a6136647147ee822f249895543119980cb8c927b33d87ac8
+  sha256: 75c4d4d246f3aded0738e2622c91c5d833092a4d222494f42fc457fc83f0ac68
 
 build:
-  number: 5
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
